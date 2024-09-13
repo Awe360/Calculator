@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form name="calc" class="calculator">
+      <input type="text" id="display" name="screen" class="value" readonly>
+      <span class="num clear" onclick="clearDisplay()">C</span>
+      <span class="num del" onclick="deleteLast()">Del</span>
+      <span class="num" onclick="addValue('(')">(</span>
+      <span class="num" onclick="addValue(')')">)</span>
+      <span class="num" onclick="addValue('/')">/</span>
+      <span class="num" onclick="addValue('7')">7</span>
+      <span class="num" onclick="addValue('8')">8</span>
+      <span class="num" onclick="addValue('9')">9</span>
+      <span class="num" onclick="addValue('*')">*</span>
+      <span class="num" onclick="addValue('4')">4</span>
+      <span class="num" onclick="addValue('5')">5</span>
+      <span class="num" onclick="addValue('6')">6</span>
+      <span class="num" onclick="addValue('-')">-</span>
+      <span class="num" onclick="addValue('1')">1</span>
+      <span class="num" onclick="addValue('2')">2</span>
+      <span class="num" onclick="addValue('3')">3</span>
+      <span class="num" onclick="addValue('+')">+</span>
+      <span class="num" onclick="addValue('0')">0</span>
+      <span class="num" onclick="addValue('.')">.</span>
+      <span class="num equal" onclick="calculate()">=</span>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
